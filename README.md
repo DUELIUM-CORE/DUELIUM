@@ -1,5 +1,6 @@
 # DUELIUM
 https://DUELIUM.io
+
 https://DUELIUM.com // OLD
 
 DUELIUM is a privacy focused MN/PoS coin, iteratively improved with the most advanced technological features.
