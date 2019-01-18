@@ -1,0 +1,26 @@
+# /etc/conf.d/DUELIUMd: config file for /etc/init.d/DUELIUMd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/DUELIUM/DUELIUM.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/DUELIUMd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/DUELIUMd.pid"
+
+# Where to write DUELIUMd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/DUELIUMd"
+
+# User and group to own DUELIUMd process
+#BITCOIND_USER="DUELIUM"
+#BITCOIND_GROUP="DUELIUM"
+
+# Path to DUELIUMd executable
+#BITCOIND_BIN="/usr/bin/DUELIUMd"
+
+# Nice value to run DUELIUMd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

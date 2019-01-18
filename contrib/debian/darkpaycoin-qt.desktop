@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=DUELIUM
+Comment=DUELIUM P2P Cryptocurrency
+Comment[fr]=DUELIUM, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=DUELIUM, eşten eşe kriptografik sanal para birimi
+Exec=DUELIUM-qt %u
+Terminal=false
+Type=Application
+Icon=DUELIUM128
+MimeType=x-scheme-handler/DUELIUM;
+Categories=Office;Finance;
