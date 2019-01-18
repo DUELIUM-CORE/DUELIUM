@@ -9,9 +9,9 @@ DUELIUM is 100% community governed and built. Every move is community-driven, as
 
 ## MANIFESTO ##
 
-DUELIUM was created as an answer to two issues : lack of privacy and lack of decentralization. Dark. Its purpose is to become a staple medium of exchange, 100% private and decentralized, linking up several applications, all of them built by the community, for the community.
+DUELIUM was created as an answer to two issues : lack of privacy and lack of decentralization. Its purpose is to become a staple medium of exchange, 100% private and decentralized, linking up several applications, all of them built by the community, for the community.
 In the first phase, DUELIUM holders benefit from a superior incentive for holding, such a feature was purposely designed to ensure maximum network security, decentralization and early adopter engagement. This phase will last 104 days until MN holders will vote for the best proposals concerning DL economics and applications for phase 2 through DL technical vote feature.
-However, the core team plans to deliver a fully integrated P2P marketplace for 2019 called DUELIUMMarket, regardless of future applications.
+However, the core team plans to deliver a fully integrated P2P marketplace for 2019 called DLMarket, regardless of future applications.
 
 ## BITCOINTALK ##
 
