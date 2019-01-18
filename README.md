@@ -1,6 +1,6 @@
-# ▼ DUELIUM
+# DUELIUM
 https://DUELIUM.io
-
+https://DUELIUM.com // OLD
 
 DUELIUM is a privacy focused MN/PoS coin, iteratively improved with the most advanced technological features.
 
@@ -14,25 +14,25 @@ However, the core team plans to deliver a fully integrated P2P marketplace for 2
 
 ## BITCOINTALK ##
 
-https://bitcointalk.org/index.php?topic=4971135
+https://bitcointalk.org/index.php?topic=4742873.0  // OLD
 
 ## COINS SPECS ##
 
 Ticker: DL
 
-Supply Cap: 21,000,000 
+Supply Cap: 8,888,888 
 
-Premine: 21000 (0.1%)
+Premine: 585,000 / swap only
 
 Masternode collateral: 10000
 
 Masternode Rewards: 90%
 
-Stake Rewards: 10% (PoS v3.0)
+Stake Rewards: 10% (PoS v2.0)
 
 P2P port: 9888 RPC port: 9889
 
-Algo: Quark
+Algo: Quark-hash
 
 Block Time: 60 Seconds
 
