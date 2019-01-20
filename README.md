@@ -4,7 +4,6 @@ https://DUELIUM.io
 https://DUELIUM.com // OLD
 
 DUELIUM is a privacy focused MN/PoS coin, iteratively improved with the most advanced technological features.
-
 DUELIUM is 100% community governed and built. Every move is community-driven, as DUELIUM technology includes a decentralized budgeting system and immutable proposal and voting systems.
 
 ## MANIFESTO ##
@@ -20,25 +19,28 @@ https://bitcointalk.org/index.php?topic=4742873.0  // OLD
 ## COINS SPECS ##
 
 Ticker: DL
-
-Supply Cap: 8,888,888 
-
-Premine: 585,000 / swap only
-
+Supply Cap: 8,888,888 DL
+Premine: 585,000 (swap only)
 Masternode collateral: 10000
-
-Masternode Rewards: 90%
-
-Stake Rewards: 10% (PoS v2.0)
-
-P2P port: 9888 RPC port: 9889
-
+Masternode Rewards: 90% ~ 95%
+Stake Rewards: 10% (+zPoS v2.0)
+P2P port: 9888 | RPC port: 9889
 Algo: Quark-hash
-
 Block Time: 60 Seconds
-
 Difficulty Retarget: Every Block
+Privacy: Zerocoin | DAO: Masternode vote
 
-Privacy: Zerocoin
+## ADDNODE ##
+addnode=45.76.69.125
+addnode=149.248.11.9
+addnode=149.28.66.139
+addnode=149.248.3.47
+addnode=8.6.8.198
+addnode=45.77.70.228
+addnode=207.246.107.235
 
-DAO: Masternode vote
+
+## COMPILE NOTE ##
+chmod 755 ./share/genbuild.sh
+chmod 755 /home/admin/DUELIUM/share/genbuild.sh
+chmod 755 ./src/leveldb/build_detect_platform
