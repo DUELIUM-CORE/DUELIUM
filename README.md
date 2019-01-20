@@ -31,16 +31,27 @@ Difficulty Retarget: Every Block
 Privacy: Zerocoin | DAO: Masternode vote
 
 ## ADDNODE ##
+
 addnode=45.76.69.125
+
 addnode=149.248.11.9
+
 addnode=149.28.66.139
+
 addnode=149.248.3.47
+
 addnode=8.6.8.198
+
 addnode=45.77.70.228
+
 addnode=207.246.107.235
 
 
+
 ## COMPILE NOTE ##
+
 chmod 755 ./share/genbuild.sh
+
 chmod 755 /home/admin/DUELIUM/share/genbuild.sh
+
 chmod 755 ./src/leveldb/build_detect_platform
