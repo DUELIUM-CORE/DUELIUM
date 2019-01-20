@@ -19,16 +19,27 @@ https://bitcointalk.org/index.php?topic=4742873.0  // OLD
 ## COINS SPECS ##
 
 Ticker: DL
+
 Supply Cap: 8,888,888 DL
+
 Premine: 585,000 (swap only)
+
 Masternode collateral: 10000
+
 Masternode Rewards: 90% ~ 95%
+
 Stake Rewards: 10% (+zPoS v2.0)
+
 P2P port: 9888 | RPC port: 9889
+
 Algo: Quark-hash
+
 Block Time: 60 Seconds
+
 Difficulty Retarget: Every Block
+
 Privacy: Zerocoin | DAO: Masternode vote
+
 
 ## ADDNODE ##
 
