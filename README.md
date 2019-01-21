@@ -61,8 +61,9 @@ addnode=207.246.107.235
 
 ## COMPILE NOTE ##
 
-chmod 755 ./share/genbuild.sh
-
-chmod 755 /home/admin/DUELIUM/share/genbuild.sh
-
-chmod 755 ./src/leveldb/build_detect_platform
+chmod u+x share/genbuild.sh
+chmod u+x src/leveldb/build_detect_platform
+chmod u+x ./autogen.sh && ./autogen.sh
+./configure --disable-dependency-tracking --enable-tests=no --without-gui --without-miniupnpc
+make
+make install
