@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017 The DUELIUM developers
+// Copyright (c) 2018-2019 The DUELIUM developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -54,7 +54,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 // + Contains no strange transactions
 static Checkpoints::MapCheckpoints mapCheckpoints = 
    boost::assign::map_list_of
-   (0, uint256("0x553f8663e704026158565ca45522d5a0511b00f0145a4be5479ec599b57b847b"));
+   (0, uint256("0x52971ce82fd9edd1276a085a71b8504e811f7dd22b584ece7d5b13ae793d0a5a"));
    //(888, uint256("0xcc4cf4b21367e3debf70de9091d7997767bf07ce92895bce755584308f83fb6f"))
    //(2888, uint256("0xf779c5506420c371b6cc63b57e0508bf89a93c7e2ae7482df0082ad30bbedf0e"))
    //(5888, uint256("0x3326c110adeca2dd13fc8a91d424f750a340d084104432e5bb3b0d674b4ba0f0")) 
@@ -68,7 +68,7 @@ static const Checkpoints::CCheckpointData data = {
     //1532884475, // * UNIX timestamp of last checkpoint block
     //0,          // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
-    1545594056,
+    1548300673,
     0,
     2666        // * estimated number of transactions per day after checkpoint
 };
@@ -77,7 +77,7 @@ static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
     boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
-    1545594056,
+    1548300673,
     0,
     250};
 
@@ -85,7 +85,7 @@ static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
     boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
-    1545594056,
+    1548300673,
     0,
     100};
 
@@ -122,7 +122,7 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0xa3;
+        pchMessageStart[0] = 0xa4;
         pchMessageStart[1] = 0xb4;
         pchMessageStart[2] = 0xc2;
         pchMessageStart[3] = 0x4d;
@@ -155,7 +155,7 @@ public:
          *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
          *   vMerkleTree: e0028e
          */
-        const char* pszTimestamp = "What would DUELIUM DO? - 12/23/2018";
+        const char* pszTimestamp = "DUELIUM is BACK!";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -165,14 +165,14 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1545594056;
+        genesis.nTime = 1548300673;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 995333;
+        genesis.nNonce = 304572;
 
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x553f8663e704026158565ca45522d5a0511b00f0145a4be5479ec599b57b847b"));
-        assert(genesis.hashMerkleRoot == uint256("0xa2a3d215ee057a880c7df8ff851ec502034333fbca8888181fd1ddd399e429ec"));
+        assert(hashGenesisBlock == uint256("0x52971ce82fd9edd1276a085a71b8504e811f7dd22b584ece7d5b13ae793d0a5a"));
+        assert(genesis.hashMerkleRoot == uint256("0x245f0d0dcae8962716c457a426b08cd35e4c12e05cec9dba1b6e800429da0a35"));
 
         vSeeds.push_back(CDNSSeedData("Node-1", "149.248.1.96"));         
         vSeeds.push_back(CDNSSeedData("Node-2", "45.63.60.176"));         
@@ -253,14 +253,14 @@ public:
         nMaturity = 15;
         nMasternodeCountDrift = 4;
         nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
-        nMaxMoneyOut = 43199500 * COIN;
-        nLastPOWBlock = 50000;
-        nZerocoinStartHeight = 200;
+        nMaxMoneyOut = 8888888 * COIN;
+        nLastPOWBlock = 200;
+        nZerocoinStartHeight = 88;
 
         nZerocoinLastOldParams = 100000000;
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1535224800;
+        genesis.nTime = 1548300673;
         genesis.nNonce = 12346;
 
 
