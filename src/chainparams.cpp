@@ -143,7 +143,7 @@ public:
         /** Height or Time Based Activations **/
         nLastPOWBlock = 200;
         nModifierUpdateBlock = 888888;
-        nZerocoinStartHeight = 888;
+        nZerocoinStartHeight = 88;
 
         /**
          * Build the genesis block. Note that the output of the genesis coinbase cannot
@@ -174,14 +174,10 @@ public:
         assert(hashGenesisBlock == uint256("0x553f8663e704026158565ca45522d5a0511b00f0145a4be5479ec599b57b847b"));
         assert(genesis.hashMerkleRoot == uint256("0xa2a3d215ee057a880c7df8ff851ec502034333fbca8888181fd1ddd399e429ec"));
 
-        vSeeds.push_back(CDNSSeedData("45.76.69.125", "45.76.69.125"));         
-        vSeeds.push_back(CDNSSeedData("149.248.11.9", "149.248.11.9"));         
-        vSeeds.push_back(CDNSSeedData("149.28.66.139", "149.28.66.139"));         
-        vSeeds.push_back(CDNSSeedData("149.248.3.47", "149.248.3.47"));
-	vSeeds.push_back(CDNSSeedData("8.6.8.198", "8.6.8.198"));         
-        vSeeds.push_back(CDNSSeedData("45.77.70.228", "45.77.70.228")); 
-	vSeeds.push_back(CDNSSeedData("207.246.107.235", "207.246.107.235"));   
-
+        vSeeds.push_back(CDNSSeedData("Node-1", "149.248.1.96"));         
+        vSeeds.push_back(CDNSSeedData("Node-2", "45.63.60.176"));         
+        vSeeds.push_back(CDNSSeedData("Node-3", "45.76.76.136"));         
+        
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 30);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
         base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 212);
@@ -221,6 +217,7 @@ public:
         nRequiredAccumulation = 1;
         nDefaultSecurityLevel = 100; //full security level for accumulators
         nZerocoinHeaderVersion = 4; //Block headers must be this version once zerocoin is active
+	nZerocoinRequiredStakeDepth = 200; // The required confirmations for a zpiv to be stakable
         nBudgetFeeConfirmations = 6; // Number of confirmations for the finalization fee
     }
 
@@ -246,7 +243,7 @@ public:
         pchMessageStart[2] = 0x66;
         pchMessageStart[3] = 0xbb;
         vAlertPubKey = ParseHex("04cda49c0f1a60d2a82f57b649f4e809b865456e0f7cd5668520349945aa299cb7f4d2490f63bfa7e4085fb305820f4a9d7d7882a768cbcb6fd1568f8dbe78321d");
-        nDefaultPort = 6663;
+        nDefaultPort = 9883;
         nEnforceBlockUpgradeMajority = 51;
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
@@ -294,10 +291,10 @@ public:
         fMineBlocksOnDemand = false;
         fTestnetToBeDeprecatedFieldRPC = true;
 
-        nPoolMaxTransactions = 2;
+        nPoolMaxTransactions = 3;
         strSporkKey = "0483e763f9a4492549e66802d59a1b668bb0697dcca60e57dee4da778ed41884f9a871e9e71b4c7017e97b06c1f9ec28392b186327b186f7d9d5d0960df06d943b"; 
         strObfuscationPoolDummyAddress = "DKBV5yd1kepzsHBymuGVXpfyuCgMZQRxrx";
-        nBudgetFeeConfirmations = 3; // Number of confirmations for the finalization fee. We have to make this very short
+        nBudgetFeeConfirmations = 6; // Number of confirmations for the finalization fee. We have to make this very short
                                      // here because we only have a 8 block finalization window on testnet
     }
     const Checkpoints::CCheckpointData& Checkpoints() const
@@ -338,7 +335,7 @@ public:
         nZerocoinStartHeight = 100;
 
         hashGenesisBlock = genesis.GetHash();
-        nDefaultPort = 6660;
+        nDefaultPort = 9880;
     //    assert(hashGenesisBlock == uint256("0x2b1a0f66712aad59ad283662d5b919415a25921ce89511d73019107e380485bf"));
 
         bech32_hrp = "DLt";
@@ -377,7 +374,7 @@ public:
     {
         networkID = CBaseChainParams::UNITTEST;
         strNetworkID = "unittest";
-        nDefaultPort = 6664;
+        nDefaultPort = 9884;
         vFixedSeeds.clear(); //! Unit test mode doesn't have any fixed seeds.
         vSeeds.clear();      //! Unit test mode doesn't have any DNS seeds.
 
