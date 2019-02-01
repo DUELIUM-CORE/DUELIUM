@@ -141,9 +141,9 @@ public:
         nMaxMoneyOut = 8888888 * COIN;
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 200;
+        nLastPOWBlock = 266;
         nModifierUpdateBlock = 888888;
-        nZerocoinStartHeight = 88;
+        nZerocoinStartHeight = 888;
 
         /**
          * Build the genesis block. Note that the output of the genesis coinbase cannot
@@ -174,9 +174,9 @@ public:
         assert(hashGenesisBlock == uint256("0x52971ce82fd9edd1276a085a71b8504e811f7dd22b584ece7d5b13ae793d0a5a"));
         assert(genesis.hashMerkleRoot == uint256("0x245f0d0dcae8962716c457a426b08cd35e4c12e05cec9dba1b6e800429da0a35"));
 
-        vSeeds.push_back(CDNSSeedData("Node-1", "149.248.1.96"));         
-        vSeeds.push_back(CDNSSeedData("Node-2", "45.63.60.176"));         
-        vSeeds.push_back(CDNSSeedData("Node-3", "45.76.76.136"));         
+        //vSeeds.push_back(CDNSSeedData("Node-1", "149.248.1.96"));         
+        //vSeeds.push_back(CDNSSeedData("Node-2", "45.63.60.176"));         
+        //vSeeds.push_back(CDNSSeedData("Node-3", "45.76.76.136"));         
         
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 30);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
