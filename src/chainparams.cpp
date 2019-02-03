@@ -136,14 +136,14 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // 60 DUELIUM: 1 day
         nTargetSpacing = 1 * 60;  // DUELIUM: 1 minute
-        nMaturity = 59; 
+        nMaturity = 29; 
         nMasternodeCountDrift = 20; 
         nMaxMoneyOut = 8888888 * COIN;
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 200;
-        nModifierUpdateBlock = 888888;
-        nZerocoinStartHeight = 888;
+        nModifierUpdateBlock = 8888888;
+        nZerocoinStartHeight = 201;
 
         /**
          * Build the genesis block. Note that the output of the genesis coinbase cannot
@@ -174,9 +174,9 @@ public:
         assert(hashGenesisBlock == uint256("0x9ef80e44e69fd70d4c9e93bcba9c95a3454640633f1fc1b6df968702f39f7ba7"));
         assert(genesis.hashMerkleRoot == uint256("0xa30b1d7ad59dcc189e08f6731b90b68596ee46e686c802a291293cac7cc14678"));
 
-        vSeeds.push_back(CDNSSeedData("Node-1", "8.3.29.168"));         
-        vSeeds.push_back(CDNSSeedData("Node-2", "45.77.123.140"));         
-        vSeeds.push_back(CDNSSeedData("Node-3", "45.32.72.24"));         
+        vSeeds.push_back(CDNSSeedData("Node-1", "149.28.83.11"));         
+        vSeeds.push_back(CDNSSeedData("Node-2", "207.246.105.147"));         
+        vSeeds.push_back(CDNSSeedData("Node-3", "149.28.70.11"));         
         
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 30);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
@@ -254,7 +254,7 @@ public:
         nModifierUpdateBlock = 51197; //approx Mon, 17 Apr 2017 04:00:00 GMT
         nMaxMoneyOut = 8888888 * COIN;
         nLastPOWBlock = 200;
-        nZerocoinStartHeight = 88;
+        nZerocoinStartHeight = 201;
 
         nZerocoinLastOldParams = 100000000;
 
