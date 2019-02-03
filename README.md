@@ -1,7 +1,7 @@
 # DUELIUM
-https://DUELIUM.io
+https://DUELIUM.io  // coming soon
 
-https://DUELIUM.com // OLD
+https://DUELIUM.com // OLD-concept
 
 DUELIUM is a privacy focused MN/PoS coin, iteratively improved with the most advanced technological features.
 DUELIUM is 100% community governed and built. Every move is community-driven, as DUELIUM technology includes a decentralized budgeting system and immutable proposal and voting systems.
@@ -22,13 +22,13 @@ Ticker: DL
 
 Supply Cap: 8,888,888 DL
 
-Premine: 585,000 (swap only)
+Premine: 650,000 (swap only)
 
-Masternode collateral: 10000
+Masternode collateral: 10,000
 
 Masternode Rewards: 90% ~ 95%
 
-Stake Rewards: 10% (+zPoS v2.0)
+Stake Rewards: 5% ~ 10% (+zPoS v3.0)
 
 P2P port: 9888 | RPC port: 9889
 
@@ -43,11 +43,11 @@ Privacy: Zerocoin | DAO: Masternode vote
 
 ## ADDNODE ##
 
-addnode=149.248.1.96
+addnode=8.3.29.168
 
-addnode=45.63.60.176
+addnode=45.77.123.140
 
-addnode=45.76.76.136
+addnode=45.32.72.24
 
 
 ## COMPILE NOTE ##
