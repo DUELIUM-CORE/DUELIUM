@@ -70,7 +70,7 @@ static const Checkpoints::CCheckpointData data = {
                 //   (the tx=... number in the SetBestChain debug.log lines)
     1549161989,
     0,
-    2666        // * estimated number of transactions per day after checkpoint
+    2888        // * estimated number of transactions per day after checkpoint
 };
 
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
