@@ -88,7 +88,7 @@ unsigned int nCoinCacheSize = 5000;
 unsigned int nBytesPerSigOp = DEFAULT_BYTES_PER_SIGOP;
 bool fAlerts = DEFAULT_ALERTS;
 
-unsigned int nStakeMinAge = 3 * 60 * 60; // 3 heures
+unsigned int nStakeMinAge = 2 * 60 * 60; // 2 hours
 //unsigned int nStakeMinAge = 3 * 60 ; // 3 min
 int64_t nReserveBalance = 0;
 
@@ -2162,12 +2162,15 @@ int64_t GetBlockValue(int nHeight)
     }
 
     if (nHeight == 0) {
-       nSubsidy = 0 * COIN; 
+       nSubsidy = 50 * COIN; 
     }
     else if (nHeight < 6 && nHeight > 0) { // premine phase
-        nSubsidy = 128000 * COIN;
+        nSubsidy = 127000 * COIN;
     }
-    else if (nHeight <= 200 && nHeight >= 6) { // warming phase
+    else if (nHeight <= 60 && nHeight >= 6) { // warming phase
+        nSubsidy = 100 * COIN;
+    }
+    else if (nHeight <= 200 && nHeight >= 61) { // warming phase
         nSubsidy = 0.1 * COIN;
     }
     else if (nHeight <= 19999 && nHeight >= 201) { // swap phase
