@@ -2162,15 +2162,15 @@ int64_t GetBlockValue(int nHeight)
     }
 
     if (nHeight == 0) {
-       nSubsidy = 50 * COIN; 
+       nSubsidy = 25000 * COIN; 
     }
     else if (nHeight < 6 && nHeight > 0) { // premine phase
-        nSubsidy = 127000 * COIN;
+        nSubsidy = 128000 * COIN;
     }
-    else if (nHeight <= 60 && nHeight >= 6) { // warming phase
+    else if (nHeight <= 60 && nHeight >= 6) { // warming phase / staking
         nSubsidy = 100 * COIN;
     }
-    else if (nHeight <= 200 && nHeight >= 61) { // warming phase
+    else if (nHeight <= 200 && nHeight >= 61) { // POS transition phase
         nSubsidy = 0.1 * COIN;
     }
     else if (nHeight <= 19999 && nHeight >= 201) { // swap phase
