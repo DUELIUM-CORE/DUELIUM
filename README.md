@@ -43,15 +43,15 @@ Privacy: Zerocoin | DAO: Masternode vote
 
 ## ADDNODE ##
 
-addnode=149.28.83.11
+addnode=45.77.126.29
 
-addnode=207.246.105.147
+addnode=149.28.74.165
 
-addnode=149.28.70.11
+addnode=144.202.120.231
 
-addnode=149.248.7.200
+addnode=45.32.83.251
 
-addnode=149.28.81.224
+addnode=45.32.84.100
 
 
 ## COMPILE NOTE ##
