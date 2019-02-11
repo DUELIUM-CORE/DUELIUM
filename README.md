@@ -22,9 +22,9 @@ Ticker: DL
 
 Supply Cap: 8,888,888 DL
 
-Premine: 650,000 (swap only)
+Premine: 675,000 (Public Swap Only)
 
-Masternode collateral: 10,000
+Masternode collateral: 10,000 DL
 
 Masternode Rewards: 90% ~ 95%
 
@@ -43,15 +43,15 @@ Privacy: Zerocoin | DAO: Masternode vote
 
 ## ADDNODE ##
 
-addnode=45.77.126.29
+addnode=45.32.65.241
 
-addnode=149.28.74.165
+addnode=149.248.11.62
 
-addnode=144.202.120.231
+addnode=45.76.175.215
 
-addnode=45.32.83.251
+addnode=149.28.80.106 
 
-addnode=45.32.84.100
+addnode=45.77.87.131
 
 
 ## COMPILE NOTE ##
