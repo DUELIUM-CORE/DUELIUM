@@ -122,7 +122,7 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0xa5;
+        pchMessageStart[0] = 0xc5;
         pchMessageStart[1] = 0xb2;
         pchMessageStart[2] = 0xc4;
         pchMessageStart[3] = 0x4d;
@@ -174,11 +174,11 @@ public:
         assert(hashGenesisBlock == uint256("0x857be02d01114c70ee8fe372648831b443d04704b887d9faaeec0bcd754e6069"));
         assert(genesis.hashMerkleRoot == uint256("0xa54db8b06811062a55c2e4e85ed12f896028a97e01b3031a459ae9b19785cabc"));
 
-        vSeeds.push_back(CDNSSeedData("Node-1", "45.77.126.29"));         
-        vSeeds.push_back(CDNSSeedData("Node-2", "149.28.74.165"));         
-        vSeeds.push_back(CDNSSeedData("Node-3", "144.202.120.231"));  
-	vSeeds.push_back(CDNSSeedData("Node-4", "45.32.83.251"));         
-        vSeeds.push_back(CDNSSeedData("Node-5", "45.32.84.100"));    
+        //vSeeds.push_back(CDNSSeedData("Node-1", "45.77.126.29"));         
+        //vSeeds.push_back(CDNSSeedData("Node-2", "149.28.74.165"));         
+        //vSeeds.push_back(CDNSSeedData("Node-3", "144.202.120.231"));  
+	//vSeeds.push_back(CDNSSeedData("Node-4", "45.32.83.251"));         
+        //vSeeds.push_back(CDNSSeedData("Node-5", "45.32.84.100"));    
         
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 30);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 13);
