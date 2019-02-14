@@ -60,17 +60,17 @@ struct CNodeStateStats;
 
 
 inline int64_t GetMstrNodCollateral(int nHeight){
-       if(nHeight < 26666)
+       if(nHeight < 20000)
       {
-        return 10000;
+        return 20000;
       }
-      else if(nHeight >= 26666 && nHeight < 200000)
+      else if(nHeight >= 20000 && nHeight < 200000)
       {
-        return 10000;
+        return 20000;
       }
 else
       {
-        return 10000;
+        return 50000;
       }
  }
 
