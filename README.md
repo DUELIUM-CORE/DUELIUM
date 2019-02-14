@@ -24,15 +24,18 @@ Supply Cap: 8,888,888 DL
 
 Premine: 675,000 (Public Swap Only)
 
-Masternode collateral: 10,000 DL
+Masternode collateral: 20,000 DL until block 200,000
+                       50,000 DL after block 200,000
 
-Masternode Rewards: 90% ~ 95%
+Masternode Rewards: 90% of the block reward until 400,000
+                    95% of the block reward after 400,000
 
-Stake Rewards: 5% ~ 10% (+zPoS v3.0)
+Stake Rewards: 10% of the block reward until 400,000
+                5% of the block reward after 400,000  
 
 P2P port: 9888 | RPC port: 9889
 
-Algo: Quark-hash
+Algo: Quark-hash (+zPoS v3.0)
 
 Block Time: 60 Seconds
 
