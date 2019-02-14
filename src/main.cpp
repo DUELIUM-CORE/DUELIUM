@@ -2162,7 +2162,7 @@ int64_t GetBlockValue(int nHeight)
     }
 
     if (nHeight == 0) {
-       nSubsidy = 35000 * COIN; // initial network MNs/UTXOs
+       nSubsidy = 45500 * COIN; // initial network MNs/UTXOs
     }
     else if (nHeight < 6 && nHeight > 0) { // premine for public swap
         nSubsidy = 128000 * COIN;
@@ -2335,7 +2335,7 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
             return 0;
     }
 
-    if (nHeight < 409999) {
+    if (nHeight < 400000) {
         ret = blockValue * 0.90;
     }
 
