@@ -24,6 +24,8 @@ Supply Cap: 8,888,888 DL
 
 Premine: 675,000 (Public Swap Only)
 
+Type: POW until block 350 | POS/MN thereafter
+
 Masternode collateral: 20,000 DL until block 200,000
 
                        50,000 DL after block 200,000
