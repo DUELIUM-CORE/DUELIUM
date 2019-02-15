@@ -22,7 +22,7 @@ Ticker: DL
 
 Supply Cap: 8,888,888 DL
 
-Premine: 675,000 (Public Swap Only)
+Premine: 685,500 (Public Swap Only)
 
 Type: POW until block 350 | POS/MN thereafter
 
@@ -51,15 +51,15 @@ Privacy: Zerocoin | DAO: Masternode vote
 
 ## ADDNODE ##
 
-addnode=45.76.171.186
+addnode=45.32.90.181
 
-addnode=207.246.99.41
+addnode=149.28.91.210
 
-addnode=149.28.90.23
+addnode=45.77.68.163
 
-addnode=149.248.18.182 
+addnode=149.28.71.251 
 
-addnode=45.77.121.119
+addnode=207.246.103.44
 
 
 ## COMPILE NOTE ##
