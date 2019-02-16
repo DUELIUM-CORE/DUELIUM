@@ -2167,10 +2167,10 @@ int64_t GetBlockValue(int nHeight)
     else if (nHeight < 6 && nHeight > 0) { // premine for public swap
         nSubsidy = 128000 * COIN;
     }
-    else if (nHeight <= 200 && nHeight >= 6) { // POS transition phase
+    else if (nHeight <= 500 && nHeight >= 6) { // POS transition phase
         nSubsidy = 0.1 * COIN;
     }
-    else if (nHeight <= 19999 && nHeight >= 201) { // swap phase
+    else if (nHeight <= 19999 && nHeight >= 501) { // swap phase
         nSubsidy = 0.25 * COIN;
     }
     else if (nHeight <= 29999 && nHeight >= 20000) { // Here we go!
